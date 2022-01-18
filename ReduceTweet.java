@@ -14,7 +14,7 @@ package tn.isima.tp3;
     throws IOException, InterruptedException {
         String line = value.toString();
         String[] data = line.split('\t');
-        String number_of_likes = Integer.parseInt(data[7]);
+        String number_of_likes = Integer.parseInt(data[8]);
         User user = numberOfLikesPriorityQueue.peek();
 
         if (numberOfLikesPriorityQueue.size()<=3 || number_of_likes > user.getNumberOfLikes()) {
